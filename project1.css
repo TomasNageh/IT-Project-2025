@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+002222}
+li , a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    }
+    .change-theme {
+     position: relative;
+      top: .4rem;
+      font-size: 2rem;
+      cursor: pointer;}
+
+
+    header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: center;
+     padding: 15px 30px;
+     background-color: #24252a;
+
+    }
+    .logo{
+     cursor: pointer;
+     width: 3%;
+
+    }
+    .nav_links0{
+     list-style: none;
+    }
+    .nav_links0 li{
+     display: inline-block;
+     padding: 0 20px;
+    }
+    .nav_links0 li a {
+     transition: all 0.3s ease 0s;
+    }
+    .nav_links0 li a:hover {
+    color: #0088a9;
+    }
+    .nav_links0 li i {
+     transition: all 0.3s ease 0s;
+    }
+    .nav_links0 li i:hover {
+    color: #0088a9;
+    }
+    .social {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     margin : auto;
+     position: relative;
+     top: 100%;
+    }
+    .logo {
+     width: 40px;
+    }
+
+
+:root {
+  --text-color: black;
+  --body-color: blanchedalmond ;
+}
+body.dark-theme
+{
+  --text-color: white ;
+  --body-color: #333 ;
+}
+body{
+  background-color:var(--body-color);
+  color: var(--text-color);
+
+}
+
+
+body::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: darkorange;
+    position: absolute;
+    z-index: -1;
+    clip-path: circle(22% at 70% 65%);
+
+
+
+
+}
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        width: 80%;
+
+
+    }
+
+    .content .text{
+
+        width: 40%;
+        padding: 10px;
+    }
+    .content .text h1{
+        letter-spacing: 2px;
+        font-style: italic;
+
+    }
+    .content .text h2{
+        color: darkorange;
+    }
+    .content .text h3{
+        font-size: 50px;
+        font-weight: 700;
+
+
+
+    }
+.details{
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+.price{
+    color: darkorange;
+    font-size: 40px;
+
+}
+button{
+    font-size: 20px;
+    color: black;
+    border-radius: 0.5rem;
+
+}
+    .content .image{
+        width: 60%;
+    }
+    .content .image img{
+        width: 100%;
+        margin-top: -20px;
+        margin-left: 180px;
+
+    }
+    .PD{
+        font-size: 40PX;
+    }
+
+table{
+    width: 100%;
+    border: 1px solid gray;
+    background: floralwhite;
+color:black;
+}
+table td{
+   padding: 15px;
+}
+table thead td{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+
+}
+table tbody td{
+    font-size: 16px;
+}
+.PA{
+    font-size: 40px;
+}
+.video{
+    position: relative;
+}
+.video video{
+    width: 100%;
+    height: 50%;
+}
+footer{
+    background: #111;
+    height: auto;
+    width: 1518.400;
+    font-family: "open sans";
+    padding-top: 10px;
+    color: #fff;
+    }
+    .footer-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-content h3{
+      font-size: 1.8rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      line-height: 3rem;
+    }
+    .footer-content p{
+      margin: 500px;
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 14px;
+    }
+    .socials{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0 10px 0;
+    }
+    .socials li{
+      margin: 0 10px 0 10px;
+    }
+    .socials a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .socials a i {
+      font-size: 1.1rem;
+      transition: color .4s ease;
+    }
+    .socials a:hover{
+      color: aqua;
+    }
+    .feedback:hover{
+      color: aqua;
+    }
+    .fotter-bottom{
+      background: #000;
+      width: 1518.400;
+      padding: 20px 0;
+      text-align: center ;
+    }
+    .fotter-bottom p{
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize;
+    }
+    .fotter-bottom span{
+      text-transform: uppercase;
+      opacity: .4;
+      font-weight: 200;
+    }

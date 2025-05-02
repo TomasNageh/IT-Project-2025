@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+
+    <html>
+
+    <head>
+      <link rel="icon" href="media/favicon.ico">
+
+        <title>Cart page</title>
+         <link rel="stylesheet" href="cart.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+         <script src="https://kit.fontawesome.com/abb7ef2320.js" crossorigin="anonymous"></script>
+        </head>
+
+
+   <body>
+
+        <!-- header of the page -->
+
+        <!-- header -->
+        <header id="header">
+          <img src="https://clipground.com/images/electronic-logo-png-15.png" alt="logo" class="logo">
+          <nav>
+            <ul class="nav_links0">
+            <li> <a href="Products.html"><P>Products</P></a> </li>
+            <li> <a href="index.html">HOME</a> </li>
+            <li> <a href="contact.html">FeedBack</a></li>
+            </ul>
+          </nav>
+          <ul class="nav_links0">
+          <li> <a href="cart.html"><i class="fa-solid fa-cart-shopping cart"></i></a></li>
+          <li>  <a href="login.html"><i class="fa-solid fa-user user"></i></a></li>
+          <li>  theme:	<i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+          <ul>
+        </header>
+
+
+
+
+       <main class="container">
+
+       <h1 class="heading">
+           <ion-icon name="cart-outline"></ion-icon>Your Cart
+           </h1>
+
+
+           <div class="item-flex">
+               <!-- checkout section -->
+           <section class="checkout">
+
+                <h2 class="section-heading">Payment details</h2>
+
+               <div class="payment-form">
+
+               <div class="payment-method">
+                   <button class="method selected">
+
+                   <ion-icon name="card"></ion-icon>
+
+                    <span>Credit card</span>
+                       <ion-icon class="checkmark fill"  name="checkmark-circle"></ion-icon>
+                   </button>
+
+
+                    <button class="method">
+
+                 <ion-icon name="logo-paypal"></ion-icon>
+
+                    <span>Paypal</span>
+                       <ion-icon class="checkmark"  name="checkmark-circle-outline"></ion-icon>
+                         </button>
+                   </div>
+                   <form action="#">
+                   <div class="cardholder-name">
+                       <label for="cardholder-name" class="label-default">Cardholder name</label>
+                       <input type="text" placeholder="Enter the name" id="cardholder-name" class="input-default" >
+                       </div>
+                       <div class="card-number">
+                       <label for="card-number" class="label-default">Card number</label>
+                       <input type="number" placeholder="Enter the card number" id="card-number" class="input-default" >
+                       </div>
+                       <div class="input-flex">
+
+                           <div class="expire-date">
+
+                           <label for="expire-date" class="label-default">Expiration Date</label>
+
+                            <div class="input-flex">
+                               <input type="number" name="day" id="expire-date" placeholder="31" min="1" max="31" class="input-default">
+                               /
+                               <input type="number" name="month" id="expire-date" placeholder="12" min="1" max="12" class="input-default">
+                               </div>
+                           </div>
+                       <div class="cvv">
+                       <label for="cvv" class="label-default">CVV</label>
+                       <input type="number" placeholder="CVV" id="cvv" class="input-default" >
+                       </div>
+                       </div>
+
+
+
+                   </form>
+
+               </div>
+
+                 <button class="btn btn-primary" >
+               <b>Pay EGP </b> <span id="payAmount">2.9</span>
+                   <ion-icon name="cash-outline"></ion-icon>
+               </button>
+
+
+
+               </section>
+
+
+               <!-- cart section -->
+               <section class="cart">
+
+               <div class="cart-item-box">
+
+                <h2 class="section-heading">Order summary</h2>
+
+
+                   <!-- prod 1 starts here -->
+
+
+                   <div class="product-card">
+
+                   <div class="card">
+
+                       <div class="img-box">
+                       <img src= "media/huwawei%20d15.jpg" alt="Huwawei d15" width="80px" class="product-img">
+                       </div>
+                       <div class="detail">
+
+                       <h4 class="product-name">HUAWEI MateBook D 15 Intel Core i5</h4>
+
+                           <div class="wrapper">
+
+                           <div class="product-qty">
+
+                               <button onclick="decrement1()">
+
+
+                                   <ion-icon name="remove-outline"></ion-icon>
+
+                               </button>
+                               <h2 id="root1"></h2>
+
+                               <button  onclick="icrement1()">
+
+                                  <ion-icon name="add-outline"></ion-icon>
+                               </button>
+
+
+                               </div>
+                               <div class="price">
+                               EGP <span id="price">0</span>
+                               </div>
+
+                           </div>
+
+                       </div>
+                       <button class="product-close-btn">
+                       <ion-icon name="close-outline"></ion-icon>
+                       </button>
+
+                       </div>
+
+                   </div>
+
+
+                   <!-- prod 2 starts here -->
+
+
+                     <div class="product-card">
+
+                   <div class="card">
+
+                       <div class="img-box">
+                       <img src="media/lenovo-legion-5pro.jpg"  alt="lenovo legion 5 pro" width="80px" class="product-img">
+                       </div>
+                       <div class="detail">
+
+                       <h4 class="product-name">Lenovo legion 5 pro</h4>
+
+                           <div class="wrapper">
+
+                           <div class="product-qty">
+
+                               <button onclick="decrement2()">
+
+                                   <ion-icon name="remove-outline"></ion-icon>
+
+                               </button>
+                               <h2 id="root2"></h2>
+                               <button  onclick="icrement2()">
+
+                                  <ion-icon name="add-outline"></ion-icon>
+
+                               </button>
+                               </div>
+                               <div class="price">
+                               EGP <span id="price2">0</span>
+                               </div>
+
+                           </div>
+
+                       </div>
+                       <button class="product-close-btn">
+                       <ion-icon name="close-outline"></ion-icon>
+                       </button>
+
+                       </div>
+
+                   </div>
+
+                   <!-- prod 3 starts here -->
+
+                    <div class="product-card">
+
+                   <div class="card">
+
+                       <div class="img-box">
+                       <img src="media/Amazfit%20gtr3.jpg" alt="Amazfit gtr3" width="80px" class="product-img">
+                       </div>
+                       <div class="detail">
+
+                       <h4 class="product-name">Amazfit gtr3</h4>
+
+                           <div class="wrapper">
+
+                           <div class="product-qty">
+
+                               <button onclick="decrement3()">
+
+                                   <ion-icon name="remove-outline"></ion-icon>
+
+                               </button>
+                               <h2 id="root3"></h2>
+                               <button  onclick="icrement3()">
+
+                                  <ion-icon name="add-outline"></ion-icon>
+
+                               </button>
+                               </div>
+                               <div class="price">
+                               EGP <span id="price3">0</span>
+                               </div>
+
+                           </div>
+
+                       </div>
+                       <button class="product-close-btn">
+                       <ion-icon name="close-outline"></ion-icon>
+                       </button>
+
+                       </div>
+
+                   </div>
+
+
+                   <!-- prod 4 starts here -->
+
+                   <div class="product-card">
+
+                   <div class="card">
+
+                       <div class="img-box">
+                       <img src="media/Dell%20G15.jpg" alt="Dell G15" width="80px" class="product-img">
+                       </div>
+                       <div class="detail">
+
+                       <h4 class="product-name">Dell G15 5511</h4>
+
+                           <div class="wrapper">
+
+                           <div class="product-qty">
+
+                               <button onclick="decrement4()">
+
+                                   <ion-icon name="remove-outline"></ion-icon>
+
+                               </button>
+                               <h2 id="root4"></h2>
+                               <button  onclick="icrement4()">
+
+                                  <ion-icon name="add-outline"></ion-icon>
+
+                               </button>
+                               </div>
+                               <div class="price">
+                               EGP <span id="price4">0</span>
+                               </div>
+
+                           </div>
+
+                       </div>
+                       <button class="product-close-btn">
+                       <ion-icon name="close-outline"></ion-icon>
+                       </button>
+
+                       </div>
+
+                   </div>
+
+                    <!-- prod 5 starts here -->
+
+
+                   <div class="product-card">
+
+                   <div class="card">
+
+                       <div class="img-box">
+                       <img src="media/Galaxy%20z%20flip%203.jpg" alt="Galaxy z flip 3" width="80px" class="product-img">
+                       </div>
+                       <div class="detail">
+
+                       <h4 class="product-name">Galaxy z flip 3</h4>
+
+                           <div class="wrapper">
+
+                           <div class="product-qty">
+
+                               <button onclick="decrement5()">
+
+                                   <ion-icon name="remove-outline"></ion-icon>
+
+                               </button>
+                               <h2 id="root5"></h2>
+                               <button  onclick="icrement5()">
+
+                                  <ion-icon name="add-outline"></ion-icon>
+
+                               </button>
+                               </div>
+                               <div class="price">
+                               EGP <span id="price5">0</span>
+                               </div>
+
+                           </div>
+
+                       </div>
+                       <button class="product-close-btn">
+                       <ion-icon name="close-outline"></ion-icon>
+                       </button>
+
+                       </div>
+
+                   </div>
+
+                   <!-- prod 6 starts here -->
+
+                   <div class="product-card">
+
+                   <div class="card">
+
+                       <div class="img-box">
+                       <img src="media/Redragon.jpg" alt="mouse" width="80px" class="product-img">
+                       </div>
+                       <div class="detail">
+
+                       <h4 class="product-name">Redragon M607-Gaming mouse</h4>
+
+                           <div class="wrapper">
+
+                           <div class="product-qty">
+
+                               <button onclick="decrement6()">
+
+                                   <ion-icon name="remove-outline"></ion-icon>
+
+                               </button>
+                               <h2 id="root6"></h2>
+                               <button  onclick="icrement6()">
+
+                                  <ion-icon name="add-outline"></ion-icon>
+
+                               </button>
+                               </div>
+                               <div class="price">
+                               EGP <span id="price6">0</span>
+                               </div>
+
+                           </div>
+
+                       </div>
+                       <button class="product-close-btn">
+                       <ion-icon name="close-outline"></ion-icon>
+                       </button>
+
+                       </div>
+
+                   </div>
+
+                   <!-- prod 7 starts here -->
+
+                   <div class="product-card">
+
+                   <div class="card">
+
+                       <div class="img-box">
+                       <img src="media/Earbud.jpg" alt="Earbud" width="80px" class="product-img">
+                       </div>
+                       <div class="detail">
+
+                       <h4 class="product-name">Rulefiss wireless Earbud</h4>
+
+                           <div class="wrapper">
+
+                           <div class="product-qty">
+
+                               <button onclick="decrement7()">
+
+                                   <ion-icon name="remove-outline"></ion-icon>
+
+                               </button>
+                               <h2 id="root7"></h2>
+                               <button  onclick="icrement7()">
+
+                                  <ion-icon name="add-outline"></ion-icon>
+
+                               </button>
+                               </div>
+                               <div class="price">
+                               EGP <span id="price7">0</span>
+                               </div>
+
+                           </div>
+
+                       </div>
+                       <button class="product-close-btn">
+                       <ion-icon name="close-outline"></ion-icon>
+                       </button>
+
+                       </div>
+
+                   </div>
+
+                   <!-- prod 8 starts here -->
+
+                   <div class="product-card">
+
+                   <div class="card">
+
+                       <div class="img-box">
+                       <img src="media/Galaxy%20Tap.jpg" alt="Samsung galaxy tab s7 plus" width="80px" class="product-img">
+                       </div>
+                       <div class="detail">
+
+                       <h4 class="product-name">Samsung galaxy tab s7 plus</h4>
+
+                           <div class="wrapper">
+
+                           <div class="product-qty">
+
+                               <button onclick="decrement8()">
+
+                                   <ion-icon name="remove-outline"></ion-icon>
+
+                               </button>
+                               <h2 id="root8"></h2>
+                               <button  onclick="icrement8()">
+
+                                  <ion-icon name="add-outline"></ion-icon>
+
+                               </button>
+                               </div>
+                               <div class="price">
+                               EGP <span id="price8">0</span>
+                               </div>
+
+                           </div>
+
+                       </div>
+                       <button class="product-close-btn">
+                       <ion-icon name="close-outline"></ion-icon>
+                       </button>
+
+                       </div>
+
+                   </div>
+
+                    <!-- prod 9 starts here -->
+
+                   <div class="product-card">
+
+                   <div class="card">
+
+                       <div class="img-box">
+                       <img src="media/iphone.jpg" alt="iphone 13 pro max" width="80px" class="product-img">
+                       </div>
+                       <div class="detail">
+
+                       <h4 class="product-name">iPhone 13 pro max</h4>
+
+                           <div class="wrapper">
+
+                           <div class="product-qty">
+
+                               <button onclick="decrement9()">
+
+                                   <ion-icon name="remove-outline"></ion-icon>
+
+                               </button>
+                               <h2 id="root9"></h2>
+                               <button  onclick="icrement9()">
+
+                                  <ion-icon name="add-outline"></ion-icon>
+
+                               </button>
+                               </div>
+                               <div class="price">
+                               EGP <span id="price9">0</span>
+                               </div>
+
+                           </div>
+
+                       </div>
+                       <button class="product-close-btn">
+                       <ion-icon name="close-outline"></ion-icon>
+                       </button>
+
+                       </div>
+
+                   </div>
+
+
+                    <!-- prod 10 starts here -->
+
+                   <div class="product-card">
+
+                   <div class="card">
+
+                       <div class="img-box">
+                       <img src="media/s22%20ultra.jpg" alt="samsung s22 ultra" width="80px" class="product-img">
+                       </div>
+                       <div class="detail">
+
+                       <h4 class="product-name">Samsung S22 ultra</h4>
+
+                           <div class="wrapper">
+
+                           <div class="product-qty">
+
+                               <button onclick="decrement10()">
+
+                                   <ion-icon name="remove-outline"></ion-icon>
+
+                               </button>
+                               <h2 id="root10"></h2>
+                               <button  onclick="icrement10()">
+
+                                  <ion-icon name="add-outline"></ion-icon>
+
+                               </button>
+                               </div>
+                               <div class="price">
+                               EGP <span id="price10">0</span>
+                               </div>
+
+                           </div>
+
+                       </div>
+                       <button class="product-close-btn">
+                       <ion-icon name="close-outline"></ion-icon>
+                       </button>
+
+                       </div>
+
+                   </div>
+
+
+
+                    <!-- prod 11 starts here -->
+
+                   <div class="product-card">
+
+                   <div class="card">
+
+                       <div class="img-box">
+                       <img src="media/sony.jpg" alt="Sony WH" width="80px" class="product-img">
+                       </div>
+                       <div class="detail">
+
+                       <h4 class="product-name">Sony WH-1000XM3</h4>
+
+                           <div class="wrapper">
+
+                           <div class="product-qty">
+
+                               <button onclick="decrement11()">
+
+                                   <ion-icon name="remove-outline"></ion-icon>
+
+                               </button>
+                               <h2 id="root11"></h2>
+                               <button  onclick="icrement11()">
+
+                                  <ion-icon name="add-outline"></ion-icon>
+
+                               </button>
+                               </div>
+                               <div class="price">
+                               EGP <span id="price11">0</span>
+                               </div>
+
+                           </div>
+
+                       </div>
+                       <button class="product-close-btn">
+                       <ion-icon name="close-outline"></ion-icon>
+                       </button>
+
+                       </div>
+
+                   </div>
+
+
+                   <!-- no more products -->
+               </div>
+
+                   <div class="wrapper">
+
+                   <div class="discount-token">
+                        <label for="token" class="label-default"  >Gift card/Discount code</label>
+                        <div class="wrapper-flex">
+                         <input type="text"  name="discount-token" id="discount-token" class="input-default">
+                            <button class="btn btn-outline">Apply</button>
+                       </div>
+
+
+                       </div>
+
+
+                   </div>
+
+                <div class="amount">
+
+                    <div class="subtotal">
+
+                        <span>Subtotal</span> <span>EGP  <span id="subtotal"></span></span>
+                    </div>
+                    <br>
+                    <div class="tax">
+
+                    <span>Tax</span> <span>EGP <span id="tax">50</span></span>
+                    </div>
+
+                    <br>
+                    <div class="shipping">
+
+                        <span>Shipping</span> <span>EGP <span id="shipping"> 0.00</span></span>
+
+                    </div>
+                    <br>
+                     <div class="total">
+
+                    <span>Total</span> <span>EGP <span id="total"></span></span>
+                    </div>
+
+
+
+                   </div>
+               </section>
+
+           </div>
+
+
+
+       </main>
+
+
+       <!-- footer of the page starts here -->
+         <footer>
+  <div class="footer-content">
+    <h3>Thanks for visiting us❤️!!</h3>
+    <p>this page is just a project For IT section wish u like it</p>
+    <ul class="socials">
+      <li> <a href="#"><i class="fa-brands fa-facebook"></i></a> </li>
+      <li> <a href="#"><i class="fa-brands fa-twitter"></i></a> </li>
+      <li> <a href="#"> <i class="fa-brands fa-linkedin"></i></a> </li>
+      <li> <a href="#"> <i class="fa-brands fa-instagram"></i></a> </li>
+    </ul>
+    <p>Do u Wanna Know More <a href="about.html" class="feedback"> About-US</a> </p>
+  </div>
+  <div class="fotter-bottom">
+    <p>copyright &copy;2022  designed by <span>Team:20210230</span></p>
+  </div>
+</footer>
+
+        <!-- footer of the page ends here -->
+
+
+
+
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+       <script>
+
+            const HUAWEIMateBook= 15000;
+            const lenovolegion = 30000;
+            const Amazfit =3050;
+            const DellG15 = 26500;
+            const GalaxyZ = 23000;
+            const Redragon = 318;
+            const Earbud = 2000;
+            const iphone = 25000;
+           const samsung = 26500;
+            const galaxytab =23777;
+            const sony = 5530;
+            const tax = 50;
+
+
+            document.getElementById("subtotal").innerHTML =0;
+            document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+            document.getElementById("total").innerHTML = HUAWEIMateBook+lenovolegion+Amazfit+DellG15+GalaxyZ+Redragon+Earbud+iphone+samsung+sony+tax;
+
+
+
+
+
+
+       var data =0;
+       document.getElementById("root1").innerText=data;
+           function decrement1() {
+               data=data-1;
+               document.getElementById("root1").innerText=data;
+               document.getElementById("price").innerText=data*HUAWEIMateBook;
+               document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+
+               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+
+           }
+
+
+            function icrement1 () {
+                data=data+1;
+                document.getElementById("root1").innerText=data;
+                document.getElementById("price").innerText=data*HUAWEIMateBook;
+                document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+
+               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+
+           }
+
+
+
+           // second product
+           var data2 =0;
+           document.getElementById("root2").innerText=data2;
+
+
+           function decrement2() {
+               data2=data2-1;
+               document.getElementById("root2").innerText=data2;
+               document.getElementById("price2").innerText=data2*lenovolegion;
+               document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+
+               document.getElementById("total").innerHTML =document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+
+
+            function icrement2 () {
+                data2=data2+1;
+                document.getElementById("root2").innerText=data2;
+                document.getElementById("price2").innerText=data2*lenovolegion;
+                document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+                document.getElementById("total").innerHTML = document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+                 document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+           // third product
+           var data3 =0;
+           document.getElementById("root3").innerText=data3;
+
+
+           function decrement3() {
+               data3=data3-1;
+               document.getElementById("root3").innerText=data3;
+               document.getElementById("price3").innerText=data3*Amazfit;
+               document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+            document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+
+
+            function icrement3 () {
+                data3=data3+1;
+                document.getElementById("root3").innerText=data3;
+                document.getElementById("price3").innerText=data3*Amazfit;
+                document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+                 document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+           // fourth product
+           var data4 =0;
+           document.getElementById("root4").innerText=data4;
+
+
+           function decrement4() {
+               data4=data4-1;
+               document.getElementById("root4").innerText=data4;
+               document.getElementById("price4").innerText=data4*DellG15;
+               document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+
+               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+
+
+            function icrement4 () {
+                data4=data4+1;
+                document.getElementById("root4").innerText=data4;
+                document.getElementById("price4").innerText=data4*DellG15;
+                document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+                 document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+           //fifth product
+            var data5 =0;
+           document.getElementById("root5").innerText=data5;
+
+
+           function decrement5() {
+               data5=data5-1;
+               document.getElementById("root5").innerText=data5;
+               document.getElementById("price5").innerText=data5*GalaxyZ;
+               document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+              document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+
+
+            function icrement5 () {
+                data5=data5+1;
+                document.getElementById("root5").innerText=data5;
+                document.getElementById("price5").innerText=data5*GalaxyZ;
+                document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+              document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+                 document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+           // sixth product
+
+            var data6 =0;
+           document.getElementById("root6").innerText=data6;
+
+
+           function decrement6() {
+               data6=data6-1;
+               document.getElementById("root6").innerText=data6;
+               document.getElementById("price6").innerText=data6*Redragon;
+               document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+
+               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+            function icrement6() {
+               data6=data6+1;
+               document.getElementById("root6").innerText=data6;
+               document.getElementById("price6").innerText=data6*Redragon;
+               document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+              document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+           // seventh product
+
+           var data7 =0;
+           document.getElementById("root7").innerText=data7;
+
+
+           function decrement7() {
+               data7=data7-1;
+               document.getElementById("root7").innerText=data7;
+               document.getElementById("price7").innerText=data7*Earbud;
+               document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+             document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+             function icrement7() {
+               data7=data7+1;
+               document.getElementById("root7").innerText=data7;
+               document.getElementById("price7").innerText=data7*Earbud;
+               document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+
+               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+           // eight product
+
+            var data8 =0;
+           document.getElementById("root8").innerText=data8;
+
+
+           function decrement8() {
+               data8=data8-1;
+               document.getElementById("root8").innerText=data8;
+               document.getElementById("price8").innerText=data8*galaxytab;
+               document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+              document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+
+           function icrement8() {
+               data8=data8+1;
+                document.getElementById("root8").innerText=data8;
+               document.getElementById("price8").innerText=data8*galaxytab;
+               document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+              document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+
+        // nineth product
+
+            var data9 =0;
+           document.getElementById("root9").innerText=data9;
+
+
+           function decrement9() {
+               data9=data9-1;
+               document.getElementById("root9").innerText=data9;
+               document.getElementById("price9").innerText=data9*iphone;
+               document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+
+           function icrement9() {
+               data9=data9+1;
+               document.getElementById("root9").innerText=data9;
+               document.getElementById("price9").innerText=data9*iphone;
+               document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+            document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+           //tenth product
+
+             var data10 =0;
+           document.getElementById("root10").innerText=data10;
+
+
+           function decrement10() {
+               data10=data10-1;
+               document.getElementById("root10").innerText=data10;
+               document.getElementById("price10").innerText=data10*samsung;
+               document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+
+           function icrement10() {
+              data10=data10+1;
+               document.getElementById("root10").innerText=data10;
+               document.getElementById("price10").innerText=data10*samsung;
+               document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+              document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+           //eleventh product & the last one
+              var data11 =0;
+           document.getElementById("root11").innerText=data11;
+
+
+           function decrement11() {
+               data11=data11-1;
+               document.getElementById("root11").innerText=data11;
+               document.getElementById("price11").innerText=data11*sony;
+               document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+
+           function icrement11() {
+              data11=data11+1;
+               document.getElementById("root11").innerText=data11;
+               document.getElementById("price11").innerText=data11*sony;
+               document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
+
+
+               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
+
+
+                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+           }
+
+
+
+       </script>
+
+   <script src="theme.js"> </script>
+        </body>
+
+
+
+</html>

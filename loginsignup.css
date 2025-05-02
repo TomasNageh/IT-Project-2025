@@ -1,0 +1,205 @@
+@media all {
+:root {
+    --text-color: #333;
+    --body-color: white;
+}
+body.dark-theme {
+--body-color: #333;
+--text-color: white;
+}
+.change-theme {
+ position: relative;
+  top: .4rem;
+  font-size: 2rem;
+  cursor: pointer;}
+body {
+background-color: var(--body-color);
+color: var(--text-color);
+line-height: 1.6;}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.custom-shape-divider-top-1651145991 {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1651145991 svg {
+    position: relative;
+    display: block;
+    width: calc(231% + 1.3px);
+    height: 500px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1651145991 .shape-fill {
+    fill:#73A5C6;
+}
+
+.container1{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+li , a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: center;
+    padding: 15px 30px;
+    max-height: 50px;
+    z-index: 122;
+}
+.logo{
+    cursor: pointer;
+    width: 3%;
+
+}
+.nav_links0{
+    list-style: none;
+}
+.nav_links0 li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav_links0 li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_links0 li a:hover {
+color: #0088a9;
+}
+.nav_links0 li i {
+    transition: all 0.3s ease 0s;
+}
+.nav_links0 li i:hover {
+color: #0088a9;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin : auto;
+    position: relative;
+    top: 100%;
+}
+.logo {
+    width: 40px;
+}
+
+.wave{
+    position: relative;
+    padding-top: 20px;
+    width: 200%;
+    max-height: 500px;
+}
+.avatar{
+    margin-bottom: 25px;
+    margin: 0 0 25px 0;
+    position: relative;
+    width: 70px;
+    top: 0%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px gray;
+}
+.login{
+
+    padding: 2rem;
+    margin: 2rem;
+    border-radius:  5px;
+    background-color:  var(--body-color);
+    text-align: center;
+    width: 20rem;
+    box-shadow: 1px 1px 15px rgba(128, 128, 128, 0.651);
+    top: 20px;
+    max-height: 500px;
+}
+.signup1{
+    padding: 2rem;
+    margin: 2rem;
+    border-radius:  5px;
+    background-color:  var(--body-color);
+    text-align: center;
+    width: 20rem;
+    box-shadow: 1px 1px 15px rgba(128, 128, 128, 0.651);
+    max-height: 800px;
+
+}
+form{
+    position: relative;
+    right: 25%;
+}
+.bnmj img{
+    max-width: 430px;
+    max-height: 430px;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
+form .box{
+    text-transform: none;
+    color:  (--text-color);
+    font-size: 1.6rem;
+    padding: .8rem 1.2rem;
+    border-radius: .5rem;
+}
+form .box input{
+    width: 220px;
+    height: 30px;
+    color:  (--text-color);
+    background-color: (--body-color);
+
+}
+form h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: (--text-color);
+    text-transform: uppercase;
+}
+form .btn{
+    justify-content: center;
+    width: 220px;
+    height: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    background:#73A5C6;
+    border: 1px solid;
+}
+form .btn:hover{
+    cursor: pointer;
+    background-color: rgba(247, 86, 28, 0.836);
+}
+form .with{
+    position: relative;
+    bottom: 20px;
+    right: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+}
+
+}

@@ -1,0 +1,253 @@
+@media all {
+:root {
+    --text-color: #333;
+    --body-color: #fefbfb;
+}
+    body.dark-theme {
+    --body-color: #333;
+    --text-color: #fefbfb;
+}
+.change-theme {
+ position: relative;
+  top: .4rem;
+  font-size: 2rem;
+  cursor: pointer;}
+    body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;}
+
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+li , a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    }
+    header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: center;
+     padding: 15px 30px;
+     background-color: #24252a;
+
+    }
+    .logo{
+     cursor: pointer;
+     width: 3%;
+
+    }
+    .nav_links0{
+     list-style: none;
+    }
+    .nav_links0 li{
+     display: inline-block;
+     padding: 0 20px;
+    }
+    .nav_links0 li i {
+     transition: all 0.3s ease 0s;
+    }
+    .nav_links0 li a {
+     transition: all 0.3s ease 0s;
+    }
+    .nav_links0 li i:hover {
+    color: #0088a9;
+    }
+    .nav_links0 li a:hover {
+    color: #0088a9;
+    }
+    .social {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     margin : auto;
+     position: relative;
+     top: 100%;
+    }
+    .logo {
+     width: 40px;
+    }
+
+
+.productphanddetails{
+    display: grid;
+    grid-template-areas:
+    "g g g det det"
+    ;
+    padding-top: 20px;
+    width: 100%;
+    max-height: 500px;
+
+}
+.g{
+    grid-area: g;
+    max-width: 300px;
+    max-height: 100%;
+
+ }
+ .details{
+     grid-area: det;
+     padding-top: 10px;
+ }
+ .details h3{
+
+    padding-bottom: 20px;
+}
+.details h2{
+    padding-bottom: 10px;
+}
+.details .addbtn{
+    display: block;
+    height: 2.4em;
+    width: 8em;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 1px;
+    cursor: pointer;
+}
+.details p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+}
+.table1{
+    width: 100%;
+    height: 252px;
+}
+table{
+    width: 100%;
+    height: 200px;
+    text-align: left;
+    border: 1px solid ;
+    border-spacing: 2px ;
+    background-color: var(--body-color);
+    color: var(--text-color);
+
+
+}
+table td{
+    padding: 10px;
+
+}
+.bold{
+    font-weight: bold;
+    background-color: #333;
+    color: #eee;
+    text-align: center;
+}
+.video{
+    display: grid;
+    width: 100%;
+    height: 450px;
+    justify-self:center;
+}
+.vvvv{
+    width: 800px;
+    height: 450px;
+    align-self: center;
+    justify-self:center ;
+}
+.pic{
+    display: grid;
+    width: 100%;
+    height: 325px;
+    justify-self:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.p1{
+    max-width: 100%;
+    height: 315px;
+    align-self: center;
+    justify-self:center;
+}
+footer{
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: "open sans";
+    padding-top: 10px;
+    color: #fff;
+    }
+    .footer-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-content h3{
+      font-size: 1.8rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      line-height: 3rem;
+    }
+    .footer-content p{
+      margin: 500px;
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 14px;
+    }
+    .socials{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0 10px 0;
+    }
+    .socials li{
+      margin: 0 10px 0 10px;
+    }
+    .socials a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .socials a i {
+      font-size: 1.1rem;
+      transition: color .4s ease;
+    }
+    .socials a:hover{
+      color: aqua;
+    }
+    .feedback:hover{
+      color: aqua;
+    }
+    .fotter-bottom{
+      background: #000;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center ;
+    }
+    .fotter-bottom p{
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize;
+    }
+    .fotter-bottom span{
+      text-transform: uppercase;
+      opacity: .4;
+      font-weight: 200;
+    }
+
+.nav i{
+    padding-bottom: 20px;
+}
+
+
+}
