@@ -1,5 +1,3 @@
-
-
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bx-toggle-right'
@@ -28,3 +26,8 @@ themeButton.addEventListener('click', () => {
 // We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-toggle-left' : 'bx-toggle-right'
+
+function changeIphoneImage(imageSrc) {
+  const mainImage = document.getElementById('main-iphone-image');
+  mainImage.src = imageSrc;
+}

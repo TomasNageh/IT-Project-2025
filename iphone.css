@@ -63,7 +63,7 @@ body{
     padding:1rem;
     padding-top: 8.5rem;
     width:50rem;
-    margin:0 auto;
+    margin : auto;
 }
 
 li , a, button{
@@ -231,6 +231,8 @@ section{
 
 .item{
   opacity:0.3;
+  float: left;
+  width: 25%; 
 }
 
 
