@@ -731,11 +731,7 @@
                    data = data - 1;
                    document.getElementById("root1").innerText = data;
                    document.getElementById("price").innerText = data * HUAWEIMateBook;
-                   document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML * 1 + document.getElementById("price3").innerHTML * 1 + document.getElementById("price4").innerHTML * 1 + document.getElementById("price5").innerHTML * 1 + document.getElementById("price6").innerHTML * 1 + document.getElementById("price7").innerHTML * 1 + document.getElementById("price8").innerHTML * 1 + document.getElementById("price9").innerHTML * 1 + document.getElementById("price10").innerHTML * 1 + document.getElementById("price11").innerHTML * 1;
-
-                   document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML * 1 + document.getElementById("price3").innerHTML * 1 + document.getElementById("price4").innerHTML * 1 + document.getElementById("price5").innerHTML * 1 + document.getElementById("price6").innerHTML * 1 + document.getElementById("price7").innerHTML * 1 + document.getElementById("price8").innerHTML * 1 + document.getElementById("price9").innerHTML * 1 + document.getElementById("price10").innerHTML * 1 + document.getElementById("price11").innerHTML * 1 + tax;
-
-                   document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+                   updateTotals();
                }
            }
 
@@ -766,18 +762,12 @@
 
 
            function decrement2() {
-               data2=data2-1;
-               document.getElementById("root2").innerText=data2;
-               document.getElementById("price2").innerText=data2*lenovolegion;
-               document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
-
-
-
-               document.getElementById("total").innerHTML =document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
-
-
-
-                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+               if (data2 > 0) {
+                   data2 = data2 - 1;
+                   document.getElementById("root2").innerText = data2;
+                   document.getElementById("price2").innerText = data2 * lenovolegion;
+                   updateTotals();
+               }
            }
 
 
@@ -801,18 +791,12 @@
 
 
            function decrement3() {
-               data3=data3-1;
-               document.getElementById("root3").innerText=data3;
-               document.getElementById("price3").innerText=data3*Amazfit;
-               document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
-
-
-            document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
-
-
-
-
-                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+               if (data3 > 0) {
+                   data3 = data3 - 1;
+                   document.getElementById("root3").innerText = data3;
+                   document.getElementById("price3").innerText = data3 * Amazfit;
+                   updateTotals();
+               }
            }
 
 
@@ -837,17 +821,12 @@
 
 
            function decrement4() {
-               data4=data4-1;
-               document.getElementById("root4").innerText=data4;
-               document.getElementById("price4").innerText=data4*DellG15;
-               document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
-
-
-
-               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
-
-
-                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+               if (data4 > 0) {
+                   data4 = data4 - 1;
+                   document.getElementById("root4").innerText = data4;
+                   document.getElementById("price4").innerText = data4 * DellG15;
+                   updateTotals();
+               }
            }
 
 
@@ -869,17 +848,12 @@
 
 
            function decrement5() {
-               data5=data5-1;
-               document.getElementById("root5").innerText=data5;
-               document.getElementById("price5").innerText=data5*GalaxyZ;
-               document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
-
-
-              document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
-
-
-
-                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+               if (data5 > 0) {
+                   data5 = data5 - 1;
+                   document.getElementById("root5").innerText = data5;
+                   document.getElementById("price5").innerText = data5 * GalaxyZ;
+                   updateTotals();
+               }
            }
 
 
@@ -905,18 +879,12 @@
 
 
            function decrement6() {
-               data6=data6-1;
-               document.getElementById("root6").innerText=data6;
-               document.getElementById("price6").innerText=data6*Redragon;
-               document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
-
-
-
-               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
-
-
-
-                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+               if (data6 > 0) {
+                   data6 = data6 - 1;
+                   document.getElementById("root6").innerText = data6;
+                   document.getElementById("price6").innerText = data6 * Redragon;
+                   updateTotals();
+               }
            }
 
             function icrement6() {
@@ -940,17 +908,12 @@
 
 
            function decrement7() {
-               data7=data7-1;
-               document.getElementById("root7").innerText=data7;
-               document.getElementById("price7").innerText=data7*Earbud;
-               document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
-
-
-             document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
-
-
-
-                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+               if (data7 > 0) {
+                   data7 = data7 - 1;
+                   document.getElementById("root7").innerText = data7;
+                   document.getElementById("price7").innerText = data7 * Earbud;
+                   updateTotals();
+               }
            }
 
              function icrement7() {
@@ -975,17 +938,12 @@
 
 
            function decrement8() {
-               data8=data8-1;
-               document.getElementById("root8").innerText=data8;
-               document.getElementById("price8").innerText=data8*galaxytab;
-               document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
-
-
-              document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
-
-
-
-                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+               if (data8 > 0) {
+                   data8 = data8 - 1;
+                   document.getElementById("root8").innerText = data8;
+                   document.getElementById("price8").innerText = data8 * galaxytab;
+                   updateTotals();
+               }
            }
 
 
@@ -1011,16 +969,12 @@
 
 
            function decrement9() {
-               data9=data9-1;
-               document.getElementById("root9").innerText=data9;
-               document.getElementById("price9").innerText=data9*iphone;
-               document.getElementById("subtotal").innerHTML =document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
-
-
-               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
-
-
-                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+               if (data9 > 0) {
+                   data9 = data9 - 1;
+                   document.getElementById("root9").innerText = data9;
+                   document.getElementById("price9").innerText = data9 * iphone;
+                   updateTotals();
+               }
            }
 
 
@@ -1045,17 +999,12 @@
 
 
            function decrement10() {
-               data10=data10-1;
-               document.getElementById("root10").innerText=data10;
-               document.getElementById("price10").innerText=data10*samsung;
-               document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
-
-
-               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
-
-
-
-                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+               if (data10 > 0) {
+                   data10 = data10 - 1;
+                   document.getElementById("root10").innerText = data10;
+                   document.getElementById("price10").innerText = data10 * samsung;
+                   updateTotals();
+               }
            }
 
 
@@ -1079,16 +1028,12 @@
 
 
            function decrement11() {
-               data11=data11-1;
-               document.getElementById("root11").innerText=data11;
-               document.getElementById("price11").innerText=data11*sony;
-               document.getElementById("subtotal").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1+ document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 +document.getElementById("price8").innerHTML *1 + document.getElementById("price9").innerHTML *1 + document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1;
-
-
-               document.getElementById("total").innerHTML = document.getElementById("price").innerHTML * 1 + document.getElementById("price2").innerHTML *1 + document.getElementById("price3").innerHTML *1 + document.getElementById("price4").innerHTML *1 + document.getElementById("price5").innerHTML *1 + document.getElementById("price6").innerHTML *1 + document.getElementById("price7").innerHTML *1 + document.getElementById("price8").innerHTML *1 +document.getElementById("price9").innerHTML *1 +document.getElementById("price10").innerHTML *1+document.getElementById("price11").innerHTML *1+tax;
-
-
-                document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
+               if (data11 > 0) {
+                   data11 = data11 - 1;
+                   document.getElementById("root11").innerText = data11;
+                   document.getElementById("price11").innerText = data11 * sony;
+                   updateTotals();
+               }
            }
 
 
@@ -1105,7 +1050,27 @@
                 document.getElementById("payAmount").innerHTML = document.getElementById("total").innerHTML;
            }
 
+           // Function to update totals
+           function updateTotals() {
+               document.getElementById("subtotal").innerHTML =
+                   document.getElementById("price").innerHTML * 1 +
+                   document.getElementById("price2").innerHTML * 1 +
+                   document.getElementById("price3").innerHTML * 1 +
+                   document.getElementById("price4").innerHTML * 1 +
+                   document.getElementById("price5").innerHTML * 1 +
+                   document.getElementById("price6").innerHTML * 1 +
+                   document.getElementById("price7").innerHTML * 1 +
+                   document.getElementById("price8").innerHTML * 1 +
+                   document.getElementById("price9").innerHTML * 1 +
+                   document.getElementById("price10").innerHTML * 1 +
+                   document.getElementById("price11").innerHTML * 1;
 
+               document.getElementById("total").innerHTML =
+                   document.getElementById("subtotal").innerHTML * 1 + tax;
+
+               document.getElementById("payAmount").innerHTML =
+                   document.getElementById("total").innerHTML;
+           }
 
        </script>
 
