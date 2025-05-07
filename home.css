@@ -187,12 +187,10 @@ border: 2px solid #000;
   margin-top: 6px;
 }
 .icons{
-  position:absolute;
-  bottom:30px;
-  left: 60%;
-  margin: -15px;
-  margin-left: 43px;
-
+  position: absolute;
+  bottom: 5%; 
+  left: 68%; /*Make The Icons Under The Iphone Photo */
+  transform: translate(-50%, 10%);
 }
 .icons img{
   width: 40px;
