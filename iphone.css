@@ -294,10 +294,11 @@ transition: 1s ease;
 }
 
 .features .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: stretch;
+    
 }
 
 .features .box-container .box{
