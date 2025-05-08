@@ -1,3 +1,4 @@
+You said:
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +7,34 @@
 
 
 body{
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+  background-color: #dfe6e9; /* Light background similar to body */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #b2bec3; /* Subtle border color */
+}
+
+th {
+  background-color: #2d3436; /* Darker header background */
+  color: #dfe6e9; /* Light text for contrast */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tr:hover {
+  background-color: #b2bec3; /* Slightly darker hover effect */
+  transition: background-color 0.3s ease;
+}
      background-color:var(--body-color);
      color: var(--text-color);
 
