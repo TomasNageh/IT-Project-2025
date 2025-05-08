@@ -79,7 +79,10 @@ header {
   padding: center;
   padding: 15px 30px;
   background-color: #24252a;
-
+  /* position: fixed;
+  left: 0%;
+  right: 0%;
+z-index: 9999; */
 }
 .logo{
   cursor: pointer;
