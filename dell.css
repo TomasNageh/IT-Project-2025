@@ -35,7 +35,7 @@ tr:hover {
   background-color: #b2bec3; /* Slightly darker hover effect */
   transition: background-color 0.3s ease;
 }
-     background-color:var(--body-color);
+     /* background-color:var(--body-color); */
      color: var(--text-color);
 
 
