@@ -73,8 +73,9 @@ input{
     display: inline-block;
     text-align: center;
     position: relative;
-    background-image:url("media/photo11.jpg");
+    background-image:url("Iphones\ images/Dell g16 product 1.png");
     background-size: cover;
+    background-position: center center;
     transition: 0.5s;
 }
 .div3:hover{
@@ -82,7 +83,7 @@ input{
     height: 400px;
     transition: 0.5s;
     width: 350px;
-    background-image:url("media/photo111.jpeg");
+    background-image:url("Iphones\ images/Dell g16 product 2.png");
 }
 
 
