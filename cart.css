@@ -22,9 +22,9 @@
     --fs-15: 15px;
 
 
-    --fw-5;500;
-    --fw-6;600;
-    --fw-7;700;
+    --fw-5: 500;
+    --fw-6: 600;
+    --fw-7: 700;
 
     /* other things */
     --px : 60px;
@@ -100,8 +100,8 @@ input{
 
 input:focus
 {outline: 2px solid var(--azure);}
-input:: -webkit-inner-spin-button,
-input:: -webkit-outer-spin-button{
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
     appearance:none;
     -webkit-appearance:none;
     margin: 0;
@@ -109,14 +109,14 @@ input:: -webkit-outer-spin-button{
 }
 /* scrollbar style*/
 
-:: -webkit-scrollbar{width: 8px;}
+::-webkit-scrollbar{width: 8px;}
 
-:: -webkit-scrollbar-track{background: transparent;}
+::-webkit-scrollbar-track{background: transparent;}
 
-:: -webkit-scrollbar-thumb {background: hsl(0,0%,70%);
+::-webkit-scrollbar-thumb {background: hsl(0,0%,70%);
 border-radius: 10px;}
 
-:: - webkit-scrollbar-thumb:hover {background: hsl(0,0%,70%)};
+::-webkit-scrollbar-thumb:hover {background: hsl(0,0%,70%)};
 
 /*  the main style */
 .container
