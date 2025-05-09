@@ -677,11 +677,16 @@ text-decoration: none;
 }
 header {
 display: flex;
-justify-content: space-between;
-align-items: center;
-padding: center;
-padding: 15px 30px;
-background-color: #24252a;
+  justify-content: space-between;
+  align-items: center;
+  padding: center;
+  padding: 20px 30px;
+  background-color: #24252a;
+  /* position: fixed;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  z-index: 9999; */
 
 }
 .logo{

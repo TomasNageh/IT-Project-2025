@@ -82,13 +82,16 @@ header {
   padding: center;
   padding: 20px 30px;
   background-color: #24252a;
-  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   left: 0%;
   right: 0%;
   top: 0%;
   z-index: 9999;
   /* margin-bottom: 20px; */
+}
+header.scrolled {
+  background-color: rgba(36, 37, 42, 0.8);
+  transition: background-color 0.4s ease;
 }
 .logo {
   cursor: pointer;
