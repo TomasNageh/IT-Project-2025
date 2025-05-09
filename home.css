@@ -79,11 +79,14 @@ header {
   align-items: center;
   padding: center;
   padding: 15px 30px;
-  background-color: #24252a;
-  /* position: fixed;
+   background-color: #24252a;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
   left: 0%;
   right: 0%;
-z-index: 9999; */
+  top: 0%;
+  z-index: 9999;
+  /* margin-bottom: 20px; */
 }
 .logo{
   cursor: pointer;
@@ -111,7 +114,7 @@ color: #0088a9;
 }
 
 .container{
-
+  margin-top: 80px;
   background: black;
   min-height: 70vh;
   width: 100%;
@@ -355,7 +358,7 @@ transition: 1s ease;
 }
 .price{
   font-size: 20px;
-var(--text);
+/* var(--text); */
 }
 .skills .box-container .box{
     padding:2rem;
@@ -578,4 +581,5 @@ color: #fff;
     html{
         font-size: 50%;
     }
+}
 }
