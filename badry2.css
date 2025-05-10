@@ -11,7 +11,7 @@ body{
 a{
     text-decoration:none;
 }
-a:hover{
+a:hover{    
     transition: 0.5s;
     display: inline-block;
     cursor:pointer;
@@ -120,8 +120,9 @@ input{
     margin-bottom : 60px;
     display: inline-block;
     text-align: center;
-    background-image:url("media/photo33.jpg");
+    background-image:url("media/121203-airpods-4.png");
     background-size: cover;
+    background-position: center center;
     transition: 0.5s;
 }
 
@@ -130,7 +131,7 @@ input{
     height: 400px;
     transition: 0.5s ;
     width: 350px;
-    background-image:url("media/photo333.jpg");
+    background-image:url("media/Airpods-4\(1\).jpg");
 }
 .div6{
     border: 5px solid black;
@@ -163,8 +164,9 @@ input{
     display: inline-block;
     text-align: center;
     position: relative;
-    background-image:url("media/photo55.jpeg");
+    background-image:url("media/Galaxy_z_fold_6__1_.png");
     background-size: cover;
+    background-position: center center;
     transition: 0.5s;
 }
 
@@ -173,7 +175,7 @@ input{
     height: 400px;
     transition: 0.5s;
     width: 350px;
-    background-image:url("media/photo555.jpg");
+    background-image:url("media/Galaxy_z_fold_6__2_.png");
 }
 .div8{
     border: 5px solid black;
@@ -251,7 +253,7 @@ input{
     display: inline-block;
     text-align: center;
     position: relative;
-    background-image:url("media/photo99.jpeg");
+    background-image:url("media/S25\ Ultra.jpg");
     background-size: cover;
     background-position: center center;
     transition: 0.5s;
@@ -294,8 +296,9 @@ input{
     margin-bottom : 60px;
     display: inline-block;
     text-align: center;
-    background-image:url("media/photo1111.png");
+    background-image:url("media/red2.png");
     background-size: cover;
+    background-position: center center;
     transition: 0.5s;
 }
 
@@ -304,7 +307,7 @@ input{
     height: 400px;
     transition: 0.5s ;
     width: 350px;
-    background-image:url("media/photo11111.png");
+    background-image:url("media/Red1.png");
 }
 .div33{
     display: inline-block;
