@@ -187,8 +187,9 @@ input{
     display: inline-block;
     text-align: center;
     position: relative;
-    background-image:url("media/photo66.jpeg");
+    background-image:url("media/TAB\ S10\ PLUS\(1\).jpg");
     background-size: cover;
+    background-position: center center;
     transition: 0.5s;
 }
 
@@ -198,7 +199,7 @@ input{
     height: 400px;
     transition: 0.5s ;
     width: 350px;
-    background-image:url("media/photo666.jpeg");
+    background-image:url("media/TAB\ S10\ PLUS\(2\).jpg");
 }
 .div9{
     border: 5px solid black;
