@@ -231,8 +231,9 @@ input{
     display: inline-block;
     text-align: center;
     position: relative;
-    background-image:url("media/photo88.jpeg");
+    background-image:url("media/sonyWH-1000XM5.jpg");
     background-size: cover;
+    background-position: center center;
     transition: 0.5s;
 }
 
