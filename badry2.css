@@ -99,8 +99,9 @@ input{
     display: inline-block;
     text-align: center;
     position: relative;
-    background-image:url("media/photo22.jpeg");
+    background-image:url("Iphones\ images/Amazfit__GTR_5.png");
     background-size: cover;
+    background-position: center center;
     transition: 0.5s;
 }
 .div4:hover{
@@ -108,7 +109,7 @@ input{
     height: 400px;
     transition: 0.5s;
     width: 350px;
-    background-image:url("media/photo222.jpeg");
+    background-image:url("Iphones\ images/Amazfit__GTR_5_-2.png");
 }
 .div5{
     border: 5px solid black;
