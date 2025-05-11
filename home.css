@@ -330,8 +330,23 @@ header.scrolled {
   /* transform: translateY(100%); */
   transition: transform 0.3s ease;
 }
+.p-img-two img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+  display: block;
+  background-position: center center;
+}
+.p-img-three img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+  display: block;
+  background-position: center center;
+}
 .p-content {
   padding: 0.5rem 1rem;
+  /* /* text-align: center;  */
   transition: all 0.4s ease;
 }
 .name {
@@ -341,24 +356,21 @@ header.scrolled {
   text-transform: uppercase;
   padding: 0.2rem 0;
 }
-.p-content div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .p-content p {
   color: var(--text);
-  font-size: 10px;
+  font-size: 12px;
+  margin: 0.5rem 0;
+}
+.price {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--text);
 }
 .p-item:hover {
   box-shadow: 0 0 0 10px black;
   transition: 0.5s ease;
   opacity: 1;
   transition: 1s ease;
-}
-.price {
-  font-size: 20px;
-  /* var(--text); */
 }
 .skills .box-container .box {
   padding: 2rem;
