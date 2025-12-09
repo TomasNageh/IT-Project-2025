@@ -103,7 +103,7 @@
 
                </div>
 
-                 <button class="btn btn-primary" >
+                 <button class="btn btn-primary" onclick="processPayment()">
                <b>Pay EGP </b> <span id="payAmount">2.9</span>
                    <ion-icon name="cash-outline"></ion-icon>
                </button>
@@ -1077,6 +1077,35 @@
                    this.value = 0; // Reset to 0 if a negative value is entered
                }
            });
+
+           // Payment processing function
+           function processPayment() {
+               const cardholderName = document.getElementById("cardholder-name").value.trim();
+               const cardNumber = document.getElementById("card-number").value.trim();
+               const cvv = document.getElementById("cvv").value.trim();
+               const total = document.getElementById("payAmount").innerText;
+
+               // Validation
+               if (!cardholderName) {
+                   alert("Please enter cardholder name");
+                   return;
+               }
+               if (!cardNumber || cardNumber.length < 13) {
+                   alert("Please enter a valid card number");
+                   return;
+               }
+               if (!cvv || cvv.length < 3) {
+                   alert("Please enter a valid CVV");
+                   return;
+               }
+
+               // Success message
+               alert("Payment successful!\nAmount: EGP " + total + "\nThank you for your purchase!");
+               
+               // Clear cart and reset
+               location.reload();
+           }
+
 
        </script>
 
